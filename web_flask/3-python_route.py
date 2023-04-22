@@ -21,9 +21,10 @@ def show_c(text):
     """return string"""
     return "C {}".format(text.replace("_", " "))
 
+
 @app.route("/python/", strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
-def show_python(text="is cool")
+def show_python(text="is cool"):
     """return string"""
     return "Python {}".format(text.replace("_", " "))
 
